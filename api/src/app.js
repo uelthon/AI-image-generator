@@ -23,6 +23,10 @@ app.use('/api/image-generator-openia/dall-e', dalleRoute)
 app.use('/api/image-generator/stable', stableRoute)
 app.use('/api/posts', postRoute)
 
+app.get('/robots.txt', (req, res) => {
+  res.sendFile(__dirname + '/robots.txt')
+})
+
 app.get('*', (req, res) => {
   res.sendFile(__dirname + '/dist/index.html')
 })
