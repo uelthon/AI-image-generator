@@ -5,6 +5,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import useGetOnePostQuery from '../../hooks/useGetOnePostQuery'
 import Loader from '../Loader'
 import BodyViewer from './BodyViewer'
+import Metadata from './Metadata'
 
 const ImageViewer = ({ id }) => {
   const { data, isLoading, error } = useGetOnePostQuery({ id })
@@ -18,6 +19,7 @@ const ImageViewer = ({ id }) => {
 
   return (
     <div className='grid place-items-center bg-black bg-opacity-50 backdrop-blur-md fixed top-0 left-0 w-full h-screen z-[999]'>
+      {data && <Metadata image={data.image} modelo={data.modelo} name={data.name} />}
       {error && <p>{error.message}</p>}
       {isLoading && <Loader />}
       {data &&

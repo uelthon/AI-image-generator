@@ -1,4 +1,5 @@
 import React, { lazy } from 'react'
+import { Helmet } from 'react-helmet'
 import { useMatch } from 'react-router-dom'
 
 import SuspenseHook from '../../components/SuspenseHook'
@@ -16,6 +17,9 @@ const Generate = () => {
 
   return (
     <div className='flex flex-col justify-start w-full gap-8 pt-4 pb-16 min-h-screen px-1 md:px-0'>
+      <Helmet>
+        <title>Generate</title>
+      </Helmet>
       <h1 className='text-3xl font-bold text-center'>Result of {prompt}</h1>
       <div className={styles.generate}>
         {

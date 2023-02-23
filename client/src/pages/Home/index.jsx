@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import Banner from '../../components/Banner'
 import Search from '../../components/Search'
 
@@ -10,6 +11,9 @@ const Home = () => {
         minHeight: 'calc(100vh - 132px)'
       }}
     >
+      <Helmet>
+        <title>Text to Image</title>
+      </Helmet>
       <div className='flex flex-col w-full justify-start gap-12 sm:w-4/5 '>
         <Banner />
         <Search />
