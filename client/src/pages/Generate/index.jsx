@@ -1,5 +1,5 @@
 import React, { lazy } from 'react'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 import { useMatch } from 'react-router-dom'
 
 import SuspenseHook from '../../components/SuspenseHook'

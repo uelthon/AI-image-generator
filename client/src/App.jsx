@@ -1,5 +1,6 @@
 import React, { lazy } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -12,7 +13,7 @@ const Gallery = lazy(() => import('./pages/Gallery'))
 
 const App = () => {
   return (
-    <div>
+    <HelmetProvider>
       <Navbar />
       <main className='pt-[64px] flex flex-col justify-start items-center'>
         <section className='w-full md:w-4/5'>
@@ -34,7 +35,7 @@ const App = () => {
       </main>
       <ScrolltoTop />
       <Footer />
-    </div>
+    </HelmetProvider>
   )
 }
 
