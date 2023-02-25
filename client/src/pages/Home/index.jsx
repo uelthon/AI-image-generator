@@ -8,7 +8,7 @@ const Home = () => {
     <div
       className='flex flex-col px-4 justify-center items-center w-full sm:px-0'
       style={{
-        minHeight: 'calc(100vh - 132px)'
+        minHeight: 'calc(100vh - 120px)'
       }}
     >
       <Helmet>
