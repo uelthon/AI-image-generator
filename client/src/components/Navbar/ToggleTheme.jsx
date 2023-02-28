@@ -27,7 +27,7 @@ const ToggleTheme = () => {
   }
 
   return (
-    <button className='btn btn-circle btn-ghost' onClick={handleClick}>
+    <button className='btn btn-circle btn-ghost' onClick={handleClick} aria-label='change thema'>
       {selectTheme === 'light' ? <FiSun size='1.25rem' /> : <FiMoon size='1.25rem' />}
     </button>
   )

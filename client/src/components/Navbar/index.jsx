@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className='w-full flex justify-between items-center md:w-4/5'>
         <Link className='btn btn-ghost normal-case text-xl' to='/'>TextToImage</Link>
         <div className='flex gap-1 items-center'>
-          <Link className='btn btn-ghost normal-case' to='/gallery'>
+          <Link className='btn btn-ghost normal-case' to='/gallery' aria-label='go to gallery'>
             <TfiGallery size='1.25rem' /> <span className='hidden pl-1 md:block'>Gallery</span>
           </Link>
           <ToggleTheme />

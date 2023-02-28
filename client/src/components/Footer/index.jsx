@@ -8,13 +8,13 @@ const index = () => {
     <footer className='flex justify-center py-4 px-2 w-full md:px-0'>
       <div className='flex items-center justify-between flex-wrap gap-8 w-full md:w-4/5'>
         <div className='flex items-center gap-2'>
-          <a href='https://github.com/uelthon/AI-image-generator' target='_blank' referrerPolicy='no-referrer' rel='noreferrer'>
+          <a href='https://github.com/uelthon/AI-image-generator' target='_blank' referrerPolicy='no-referrer' rel='noreferrer' aria-label='go to github'>
             <AiOutlineGithub size='1.5rem' />
           </a>
-          <a href='https://github.com/uelthon/AI-image-generator' target='_blank' referrerPolicy='no-referrer' rel='noreferrer'>
+          <a href='https://github.com/uelthon/AI-image-generator' target='_blank' referrerPolicy='no-referrer' rel='noreferrer' aria-label='go to linkedin'>
             <FaLinkedinIn size='1.5rem' />
           </a>
-          <a href='https://github.com/uelthon/AI-image-generator' target='_blank' referrerPolicy='no-referrer' rel='noreferrer'>
+          <a href='https://github.com/uelthon/AI-image-generator' target='_blank' referrerPolicy='no-referrer' rel='noreferrer' aria-label='go to porfolio'>
             <CgWebsite size='1.5rem' />
           </a>
         </div>
